@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Splunk-Like Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <video autoplay muted loop id="video-background">
+    <source src="video/background2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  <div class="login-container">
+    <img src="splunk_logo.png" alt="Splunk Logo">
+    <h2>Welcome to Your Application</h2>
+    <form>
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit">Sign In</button>
+      </div>
+    </form>
+    <p class="instructions">
+      First time signing in? If you installed this instance, use the username and password you created at installation. Otherwise, use the username and password that your Splunk administrator gave you. If you've forgotten your username or password, please contact your Splunk administrator.
+    </p>
+  </div>
+</body>
+</html>

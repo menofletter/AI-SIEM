@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <video autoplay muted loop id="video-background">
+    <source src="video/background2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="registration-container">
+    <h2>User Registration</h2>
+    <form id="registrationForm">
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter Password" required onkeyup="checkPasswordMatch();">
+        <div id="passwordMatch" class="password-match"></div>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p class="instructions">
+      Please enter your desired username and password to register.
+    </p>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>
